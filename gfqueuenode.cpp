@@ -1,18 +1,18 @@
 template <class T> GFQueueNode<T>::GFQueueNode() {
-    data = 0;
+    data = T();
 }
 
 
-template <class T> GFQueueNode<T>::GFQueueNode(T ldata) {
+template <class T> GFQueueNode<T>::GFQueueNode(const T ldata) {
     data = ldata;
 }
 
 
-template <class T> void GFQueueNode<T>::setData(T ldata) {
+template <class T> void GFQueueNode<T>::setData(const T ldata) {
     data = ldata;
 }
 
 
-template <class T> T GFQueueNode<T>::getData() {
+template <class T> T GFQueueNode<T>::getData() const {
     return data;
 }

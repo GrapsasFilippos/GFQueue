@@ -7,9 +7,9 @@ class GFQueueNode
 {
     public:
         GFQueueNode();
-        GFQueueNode(T ldata);
-        void setData(T ldata);
-        T getData();
+        GFQueueNode(const T ldata);
+        void setData(const T ldata);
+        T getData() const;
         GFQueueNode<T> *next;
     private:
         T data;

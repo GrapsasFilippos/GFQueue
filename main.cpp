@@ -6,7 +6,7 @@ using namespace std;
 
 
 int main() {
-    GFQueue<int> queue;
+    GFQueue<int*> queue;
 
     int *pData = 0;
     int data = 0;
@@ -17,8 +17,7 @@ int main() {
             break;
         }
         else {
-            pData = new int(data);
-            queue.enqueue(pData);
+            queue.enqueue(new int(data));
         }
     } while(1);
 

@@ -9,11 +9,11 @@ class GFQueue
 {
     public:
         GFQueue();
-        void enqueue(T *);
-        T *dequeue();
+        void enqueue(const T);
+        T dequeue();
     private:
-        GFQueueNode<T *> *head;
-        GFQueueNode<T *> *tail;
+        GFQueueNode<T> *head;
+        GFQueueNode<T> *tail;
 };
 
 
