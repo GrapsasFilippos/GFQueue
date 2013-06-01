@@ -1,10 +1,8 @@
-template <class T> GFQueueNode<T>::GFQueueNode() {
-    data = T();
+template <class T> GFQueueNode<T>::GFQueueNode() : data( T() ), next( 0 ) {
 }
 
 
-template <class T> GFQueueNode<T>::GFQueueNode(const T ldata) {
-    data = ldata;
+template <class T> GFQueueNode<T>::GFQueueNode(const T ldata) : data( ldata ), next( 0 ) {
 }
 
 

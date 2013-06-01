@@ -24,9 +24,10 @@ template <class T> T GFQueue<T>::dequeue() {
         GFQueueNode<T> *node = head;
 
         head = head->next;
+        if( !head ) tail = 0;
         T data = node->getData();
-
         delete(node);
+
         return data;
     }
 }
